@@ -29,7 +29,8 @@ class Question < ApplicationRecord
         class_name: :Response
 
     has_many :responses,
-        through: :response,
+        through: :answer_choices,
+        source: :responses,
         class_name: :Response
 
 

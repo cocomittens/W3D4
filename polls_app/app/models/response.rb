@@ -28,6 +28,4 @@ class Response < ApplicationRecord
         source: :question,
         class_name: :Question
 
-    def sibling_responses
-
 end
