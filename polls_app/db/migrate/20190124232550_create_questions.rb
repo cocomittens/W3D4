@@ -5,5 +5,7 @@ class CreateQuestions < ActiveRecord::Migration[5.1]
       t.text :text, null: false
       t.timestamps
     end
+
+    add_index :questions, :poll_id
   end
 end
